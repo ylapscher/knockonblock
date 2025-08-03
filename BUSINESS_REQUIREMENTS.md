@@ -4,7 +4,7 @@
 **Business Entity:** Knock on Block Handyman Services LLC  
 **Location:** Based in Montvale, NJ  
 **Service Areas:** Bergen, Rockland, Orange, Passaic, Hudson, and Essex counties  
-**Contact Number:** 816-304-7962  
+**Contact Number:** info@knockonblock.com  
 **Domain:** www.knockonblock.com  
 
 ## 🎯 Objective
@@ -70,7 +70,6 @@ Example FAQs:
 Simple form with:
 - Full Name  
 - Email  
-- Phone  
 - Location (City/Zip)  
 - Type of Work Needed (Text Area)  
 - Submit Button  

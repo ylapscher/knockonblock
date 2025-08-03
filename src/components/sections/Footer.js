@@ -21,7 +21,6 @@ const Footer = () => {
           
           <div className="footer-contact">
             <h4>Contact</h4>
-            <p>📞 816-304-7962</p>
             <p>📧 info@knockonblock.com</p>
             <p>📍 Serving Northern NJ</p>
           </div>

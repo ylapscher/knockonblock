@@ -5,7 +5,6 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     location: '',
     workDescription: ''
   });
@@ -55,10 +54,10 @@ const Contact = () => {
             
             <div className="contact-details">
               <div className="contact-item">
-                <span className="contact-icon">📞</span>
+                <span className="contact-icon">📧</span>
                 <div>
-                  <strong>Phone</strong>
-                  <p>816-304-7962</p>
+                  <strong>Email</strong>
+                  <p>info@knockonblock.com</p>
                 </div>
               </div>
               <div className="contact-item">
@@ -101,16 +100,6 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
                 />
               </div>
             </div>

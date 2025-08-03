@@ -68,7 +68,7 @@ public/
 ## Business Context
 
 - **Owner**: Zach Block (10+ years experience, professional engineer)
-- **Contact**: 816-304-7962
+- **Contact**: info@knockonblock.com
 - **Domain**: www.knockonblock.com
 - **Service Areas**: Northern NJ counties
 - **Bio**: "Zach Block has over 10 years of experience in home repairs. He grew up learning handyman skills and has enhanced them through hands-on home remodels. In addition to running Knock on Block, Zach works as a professional engineer in the prosthetics industry."
