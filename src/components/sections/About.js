@@ -12,9 +12,9 @@ const About = () => {
             </div>
           </div>
           <div className="about-text">
-            <h2>About Zach Block</h2>
+            <h2>About Zach</h2>
             <p>
-              Zach Block has over 10 years of experience in home repairs. He grew up learning 
+              Zach has over 10 years of experience in home repairs. He grew up learning 
               handyman skills and has enhanced them through hands-on home remodels. In addition 
               to running Knock on Block, Zach works as a professional engineer in the prosthetics 
               industry.

@@ -35,3 +35,22 @@
   line-height: 1.6;
   font-size: 0.95rem;
 }
+
+@media (max-width: 640px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    height: 3rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+}
