@@ -26,7 +26,7 @@
 }
 
 .testimonial-author {
-  color: #2c3e50;
+  color: var(--primary-navy);
   font-size: 0.95rem;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .testimonial-author span {
-  color: #7f8c8d;
+  color: var(--secondary-gray);
 }
 
 @media (max-width: 640px) {

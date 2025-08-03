@@ -7,7 +7,7 @@
 }
 
 .faq-item:hover {
-  border-color: #3498db;
+  border-color: var(--accent-yellow);
 }
 
 .faq-question {
@@ -18,7 +18,7 @@
   text-align: left;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary-navy);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -32,7 +32,7 @@
 
 .faq-toggle {
   font-size: 1.5rem;
-  color: #3498db;
+  color: var(--accent-yellow);
   font-weight: normal;
   transition: transform 0.3s ease;
 }
