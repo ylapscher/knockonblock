@@ -13,7 +13,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Reliable Handyman Services in Northern NJ</h1>
+          <h1>Reliable Handyman Services in Northern NJ & Southern NY</h1>
           <p>Professional help from someone you can trust.</p>
           <button onClick={scrollToContact} className="cta-button">
             Request a Quote

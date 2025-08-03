@@ -37,3 +37,21 @@
 .testimonial-author span {
   color: #7f8c8d;
 }
+
+@media (max-width: 640px) {
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-rating {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.9rem;
+  }
+}
