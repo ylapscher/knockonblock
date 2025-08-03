@@ -1,7 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Contact.css';
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Handle form submission for development environment
+  const handleSubmit = (e) => {
+    // Only prevent default in development mode
+    if (process.env.NODE_ENV === 'development') {
+      e.preventDefault();
+      setIsSubmitted(true);
+      console.log('Form submitted (development mode)');
+    }
+    // In production, let Netlify handle the form normally
+  };
+
+  // Show success message in development mode
+  if (isSubmitted) {
+    return (
+      <section id="contact" className="contact">
+        <div className="container">
+          <div className="success-message">
+            <h2>Thank You!</h2>
+            <p>Thanks for reaching out! We'll get back to you within 1 business day.</p>
+            <p><em>(Development mode - form submission simulated)</em></p>
+            <button 
+              onClick={() => setIsSubmitted(false)}
+              className="back-button"
+            >
+              Send Another Message
+            </button>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="contact">
@@ -42,7 +75,8 @@ const Contact = () => {
             method="POST" 
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            action="/thank-you.html"
+            action={process.env.NODE_ENV === 'production' ? '/thank-you.html' : undefined}
+            onSubmit={handleSubmit}
           >
             {/* Hidden field for Netlify */}
             <input type="hidden" name="form-name" value="contact" />
