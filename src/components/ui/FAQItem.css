@@ -49,7 +49,7 @@
 }
 
 .faq-item.open .faq-answer {
-  max-height: 200px;
+  max-height: 500px;
 }
 
 .faq-answer p {
