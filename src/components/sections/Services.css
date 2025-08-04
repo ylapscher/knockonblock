@@ -96,7 +96,8 @@
   }
 
   .services-grid {
-    display: flex;
+    display: flex !important;
+    grid-template-columns: none;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 1rem;
