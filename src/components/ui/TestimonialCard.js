@@ -8,15 +8,18 @@ const TestimonialCard = ({ testimonial }) => {
 
   return (
     <div className="testimonial-card">
-      <div className="testimonial-rating">
-        {renderStars(testimonial.rating)}
+      <div className="testimonial-header">
+        <div className="testimonial-rating">
+          {renderStars(testimonial.rating)}
+        </div>
+        {testimonial.date && <div className="testimonial-date">{testimonial.date}</div>}
       </div>
       <blockquote className="testimonial-text">
         "{testimonial.text}"
       </blockquote>
       <div className="testimonial-author">
         <strong>{testimonial.name}</strong>
-        {testimonial.location && <span>, {testimonial.location}</span>}
+        {testimonial.location && <span className="testimonial-location">{testimonial.location}</span>}
       </div>
     </div>
   );
