@@ -70,17 +70,58 @@ html {
   
   h1 {
     font-size: 1.8rem;
+    line-height: 1.2;
   }
   
   h2 {
     font-size: 1.6rem;
+    line-height: 1.3;
   }
   
   h3 {
     font-size: 1.3rem;
+    line-height: 1.3;
   }
   
   p {
     font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+/* Additional mobile-friendly improvements */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Ensure tap targets are large enough */
+button, .nav-link, .floating-quote-button {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Improve text contrast for better readability */
+@media (prefers-contrast: high) {
+  :root {
+    --text-charcoal: #000000;
+    --secondary-gray: #444444;
   }
 }

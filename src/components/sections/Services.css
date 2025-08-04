@@ -85,17 +85,71 @@
   font-style: italic;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .services {
     padding: 4rem 1rem;
   }
 
-  .section-header h2 {
-    font-size: 2rem;
+  .services-main-header h2,
+  .services-section-header h3 {
+    font-size: 1.8rem;
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 0 0.5rem 1rem 0.5rem;
+    margin-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .services-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .services-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .services-grid::-webkit-scrollbar-thumb {
+    background: var(--accent-yellow);
+    border-radius: 10px;
+  }
+
+  .services-grid::-webkit-scrollbar-thumb:hover {
+    background: #e6a200;
+  }
+
+  /* Make service cards maintain minimum width in horizontal scroll */
+  .services-grid .service-card {
+    min-width: 280px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+
+  .services-section-header {
+    padding-left: 0.5rem;
+    margin: 2.5rem 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 3rem 0.5rem;
+  }
+
+  .services-main-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .services-section-header h3 {
+    font-size: 1.4rem;
+  }
+
+  .services-grid .service-card {
+    min-width: 260px;
   }
 }
