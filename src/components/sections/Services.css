@@ -8,6 +8,37 @@
   margin: 0 auto;
 }
 
+.services-main-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-main-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+}
+
+.services-section-header {
+  text-align: left;
+  margin: 3rem 0 2rem 0;
+  padding-left: 1rem;
+}
+
+.services-section-header h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-navy);
+  margin-bottom: 0.5rem;
+}
+
+.services-section-header p {
+  font-size: 1rem;
+  color: var(--secondary-gray);
+  font-style: italic;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -30,6 +61,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.services-grid.additional-services {
+  margin-top: 1rem;
 }
 
 @media (max-width: 1024px) {
