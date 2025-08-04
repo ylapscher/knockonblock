@@ -1,28 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import TestimonialCard from '../ui/TestimonialCard';
+import React from 'react';
 import { testimonials } from '../../assets/data/testimonials';
 import './Testimonials.css';
 
 const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-scroll functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 6000); // 6 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const goToPrevious = () => {
-    setCurrentIndex(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1);
-  };
-
-  const goToNext = () => {
-    setCurrentIndex(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1);
+  const renderStars = (rating) => {
+    return '⭐'.repeat(rating);
   };
 
   return (
@@ -32,34 +14,28 @@ const Testimonials = () => {
           <h2>What Our Customers Say</h2>
           <p>Real feedback from satisfied customers</p>
         </div>
-        <div className="testimonials-container">
-          <button className="testimonial-arrow testimonial-arrow-left" onClick={goToPrevious}>
-            &#8249;
-          </button>
-          <div className="testimonials-wrapper">
-            <div 
-              className="testimonials-slider" 
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="testimonial-slide">
-                  <TestimonialCard testimonial={testimonial} />
+        
+        <div className="testimonials-grid">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-item">
+              <div className="testimonial-content">
+                <div className="testimonial-rating">
+                  {renderStars(testimonial.rating)}
                 </div>
-              ))}
+                <blockquote className="testimonial-text">
+                  "{testimonial.text}"
+                </blockquote>
+                <div className="testimonial-author">
+                  <strong>{testimonial.name}</strong> - {testimonial.location}
+                </div>
+              </div>
             </div>
-          </div>
-          <button className="testimonial-arrow testimonial-arrow-right" onClick={goToNext}>
-            &#8250;
-          </button>
-        </div>
-        <div className="testimonial-dots">
-          {testimonials.map((_, index) => (
-            <button
-              key={index}
-              className={`testimonial-dot ${index === currentIndex ? 'active' : ''}`}
-              onClick={() => setCurrentIndex(index)}
-            />
           ))}
+        </div>
+        
+        <div className="testimonials-footer">
+          <p>Want to know what your neighbors are saying about us? Check out more testimonials!</p>
+          <p><strong>If we have recently serviced your home, we would appreciate a few words from you, too.</strong></p>
         </div>
       </div>
     </section>
