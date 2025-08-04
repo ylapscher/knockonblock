@@ -11,6 +11,7 @@ import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 import PrivacyPolicy from './components/sections/PrivacyPolicy';
 import TermsConditions from './components/sections/TermsConditions';
+import FloatingQuoteButton from './components/ui/FloatingQuoteButton';
 import './App.css';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingQuoteButton />
       </div>
     </Router>
   );
