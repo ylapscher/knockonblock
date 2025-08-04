@@ -1,18 +1,18 @@
 import React from 'react';
+import { useScrollToSection } from '../../hooks/useScrollToSection';
 import './FloatingQuoteButton.css';
 
 const FloatingQuoteButton = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToSection = useScrollToSection();
+
+  const handleClick = () => {
+    scrollToSection('contact');
   };
 
   return (
     <button 
       className="floating-quote-button"
-      onClick={scrollToContact}
+      onClick={handleClick}
       aria-label="Request a Quote"
     >
       Request a Quote
