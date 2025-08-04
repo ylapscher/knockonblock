@@ -1,14 +1,14 @@
 :root {
-  /* Primary Colors */
-  --primary-navy: #1A2B49;
-  --accent-yellow: #F7B500;
-  --secondary-gray: #5C677D;
-  --background-white: #F9F9F9;
-  --text-charcoal: #333333;
+  /* Primary Colors from Color Palette */
+  --primary-navy: #1A2B49;        /* Navy Blue - Brand/Headings */
+  --accent-yellow: #F7B500;       /* Construction Yellow - Buttons/Highlights */
+  --secondary-gray: #5C677D;      /* Slate Gray - Secondary Accent */
+  --background-white: #F9F9F9;    /* Off-White - Background */
+  --text-charcoal: #333333;       /* Charcoal Gray - Body Text */
   
   /* Optional Contrast Colors */
-  --steel-blue: #3D5A80;
-  --olive-green: #6C8B3C;
+  --steel-blue: #3D5A80;          /* Steel Blue - Calming handcrafted tones */
+  --olive-green: #6C8B3C;         /* Olive Green - Calming handcrafted tones */
 }
 
 * {

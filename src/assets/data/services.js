@@ -1,4 +1,4 @@
-export const services = [
+export const primaryServices = [
   {
     id: 1,
     title: "Reverse Osmosis Water Filter Installation",
@@ -16,7 +16,10 @@ export const services = [
     title: "Drywall Repair",
     description: "Expert patching, texturing, and finishing of holes, cracks, and damaged drywall.",
     icon: "🔧"
-  },
+  }
+];
+
+export const secondaryServices = [
   {
     id: 4,
     title: "TV Mounting",
@@ -34,7 +37,10 @@ export const services = [
     title: "Minor Plumbing Repairs",
     description: "Fixing leaks, installing faucets, toilet repairs, and other plumbing maintenance.",
     icon: "🔧"
-  },
+  }
+];
+
+export const additionalServices = [
   {
     id: 7,
     title: "Furniture Assembly",
@@ -54,3 +60,6 @@ export const services = [
     icon: "💡"
   }
 ];
+
+// Keep the original services export for backward compatibility
+export const services = [...primaryServices, ...secondaryServices, ...additionalServices];
