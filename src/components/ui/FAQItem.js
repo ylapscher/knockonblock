@@ -8,12 +8,22 @@ const FAQItem = ({ faq }) => {
     <div className={`faq-item ${isOpen ? 'open' : ''}`}>
       <button 
         className="faq-question"
+        id={`faq-question-${faq.id}`}
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls={`faq-answer-${faq.id}`}
       >
         <span>{faq.question}</span>
-        <span className="faq-toggle">{isOpen ? '−' : '+'}</span>
+        <div className="faq-toggle">
+          {isOpen ? '−' : '+'}
+        </div>
       </button>
-      <div className="faq-answer">
+      <div 
+        className="faq-answer"
+        id={`faq-answer-${faq.id}`}
+        role="region"
+        aria-labelledby={`faq-question-${faq.id}`}
+      >
         <p>{faq.answer}</p>
       </div>
     </div>
