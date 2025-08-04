@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useScrollToSection } from '../../hooks/useScrollToSection';
+import { ReactComponent as Logo } from '../../logo.svg';
 import './Header.css';
 
 const Header = () => {
@@ -62,6 +63,7 @@ const Header = () => {
           onClick={handleLogoClick}
           style={{ cursor: 'pointer' }}
         >
+          <Logo className="logo-svg" />
           <span>Knock on Block</span>
         </div>
         

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../logo.svg';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +9,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>Knock on Block</h3>
+            <div className="footer-logo">
+              <Logo className="footer-logo-svg" />
+              <h3>Knock on Block</h3>
+            </div>
             <p>Reliable handyman services in Northern NJ & Southern NY</p>
           </div>
           
