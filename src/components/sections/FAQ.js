@@ -7,6 +7,7 @@ const FAQ = () => {
   return (
     <section id="faq" className="faq">
       <div className="container">
+        <div className='faq-wrapper'>
         <div className="section-header">
           <h2>Frequently Asked Questions</h2>
           <p>Get answers to common questions about our services</p>
@@ -15,6 +16,7 @@ const FAQ = () => {
           {faqs.map((faq) => (
             <FAQItem key={faq.id} faq={faq} />
           ))}
+        </div>
         </div>
       </div>
     </section>

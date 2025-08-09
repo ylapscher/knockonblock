@@ -43,7 +43,7 @@ html {
 
 /* Global container styles */
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -118,11 +118,15 @@ button, .nav-link, .floating-quote-button {
   min-width: 44px;
 }
 
+.nav-link {
+  font-weight: 600;
+}
+
 /* Focus styles for keyboard accessibility - WCAG 2.2 AA compliant */
 button:focus-visible,
 .nav-link:focus-visible,
 .floating-quote-button:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #f7b501;
   outline-offset: 2px;
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
 }
@@ -131,9 +135,9 @@ button:focus-visible,
 button:focus,
 .nav-link:focus,
 .floating-quote-button:focus {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+  outline: none;
+  outline-offset: none;
+  box-shadow: none;
 }
 
 /* Improve text contrast for better readability */

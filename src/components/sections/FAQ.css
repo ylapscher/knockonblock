@@ -1,11 +1,26 @@
 .faq {
   padding: 6rem 2rem;
   background: #f8f9fa;
+  position: relative;
+}
+
+.faq::before {
+      content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent-yellow), transparent);
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.faq-wrapper {
+  width: 100%;
 }
 
 .section-header {
@@ -14,10 +29,10 @@
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 56px;
   font-weight: bold;
   color: var(--primary-navy);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header p {
@@ -27,6 +42,10 @@
 
 .faq-list {
   max-width: 100%;
+}
+
+.faq-question[aria-expanded="true"] {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
