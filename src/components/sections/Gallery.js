@@ -70,6 +70,9 @@ const Gallery = () => {
   return (
     <section id="gallery" className="gallery">
       <div className="container">
+        <div className='gallery-wrapper'>
+
+
         <div className="section-header">
           <h2>Our Work</h2>
           <p>Recent projects completed for satisfied customers</p>
@@ -111,6 +114,7 @@ const Gallery = () => {
               onClick={() => setCurrentIndex(index)}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>

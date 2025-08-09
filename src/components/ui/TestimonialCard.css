@@ -2,7 +2,6 @@
   background: white;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #e9ecef;
   transition: all 0.3s ease;
   position: relative;
@@ -13,20 +12,21 @@
 
 .testimonial-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   border-color: var(--accent-yellow);
 }
 
 .testimonial-quote-icon {
   position: absolute;
-  top: -10px;
+  top: -15px;
   left: 2rem;
   font-size: 4rem;
   color: var(--accent-yellow);
   font-family: Georgia, serif;
   line-height: 1;
   background: white;
-  padding: 0 0.5rem;
+  padding: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .testimonial-content {

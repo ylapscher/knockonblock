@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           <div className="about-image">
-            <img src="/Zach.jpeg" alt="Zach at Work" className="about-photo" />
+            <img src="/Zach-circle.png" alt="Zach at Work" className="about-photo" />
           </div>
           <div className="about-text">
             <h2>About Zach</h2>

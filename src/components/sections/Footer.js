@@ -7,6 +7,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
+        <div className='footer-wrapper'>
+
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
@@ -34,6 +36,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Knock on Block Handyman Services LLC. All rights reserved.</p>
           <p>Fully insured. NJ HIC Reg. #______</p>
+        </div>
         </div>
       </div>
     </footer>
