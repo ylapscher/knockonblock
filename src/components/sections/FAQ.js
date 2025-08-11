@@ -6,11 +6,12 @@ import './FAQ.css';
 const FAQ = () => {
   return (
     <section id="faq" className="faq">
-      <div className="container">
-        <div className="section-header">
+       <div className="section-header">
           <h2>Frequently Asked Questions</h2>
           <p>Get answers to common questions about our services</p>
         </div>
+      <div className="container">
+       
         <div className="faq-list">
           {faqs.map((faq) => (
             <FAQItem key={faq.id} faq={faq} />
