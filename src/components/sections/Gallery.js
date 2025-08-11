@@ -69,11 +69,11 @@ const Gallery = () => {
 
   return (
     <section id="gallery" className="gallery">
-      <div className="container">
-        <div className="section-header">
+       <div className="section-header">
           <h2>Our Work</h2>
           <p>Recent projects completed for satisfied customers</p>
         </div>
+      <div className="container">
         <div className="gallery-container">
           <button className="gallery-arrow gallery-arrow-left" onClick={goToPrevious}>
             &#8249;
@@ -103,7 +103,9 @@ const Gallery = () => {
             &#8250;
           </button>
         </div>
-        <div className="gallery-dots">
+       
+      </div>
+       <div className="gallery-dots">
           {galleryItems.map((_, index) => (
             <button
               key={index}
@@ -112,7 +114,6 @@ const Gallery = () => {
             />
           ))}
         </div>
-      </div>
     </section>
   );
 };
