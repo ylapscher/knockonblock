@@ -11,6 +11,7 @@ import Contact from './components/sections/Contact';
 import Footer from './components/sections/Footer';
 import PrivacyPolicy from './components/sections/PrivacyPolicy';
 import TermsConditions from './components/sections/TermsConditions';
+import ComingSoon from './components/sections/ComingSoon';
 import FloatingQuoteButton from './components/ui/FloatingQuoteButton';
 import './App.css';
 
@@ -18,11 +19,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={
-              <>
+        <Routes>
+          <Route path="/" element={<ComingSoon />} />
+          <Route path="/original" element={
+            <>
+              <Header />
+              <main>
                 <Hero />
                 <About />
                 <Services />
@@ -30,13 +32,29 @@ function App() {
                 <Testimonials />
                 <FAQ />
                 <Contact />
-              </>
-            } />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-conditions" element={<TermsConditions />} />
-          </Routes>
-        </main>
-        <Footer />
+              </main>
+              <Footer />
+            </>
+          } />
+          <Route path="/privacy-policy" element={
+            <>
+              <Header />
+              <main>
+                <PrivacyPolicy />
+              </main>
+              <Footer />
+            </>
+          } />
+          <Route path="/terms-conditions" element={
+            <>
+              <Header />
+              <main>
+                <TermsConditions />
+              </main>
+              <Footer />
+            </>
+          } />
+        </Routes>
         <FloatingQuoteButton />
       </div>
     </Router>
